@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div align="center">
+    <div align="center" id="divUnico">
         <!--Campos de texto donde poner el DNI, el nombre y los apellidos, la dirección y el teléfono.-->
         <input type="button" id="btn_generarCampos" class="button button1" onclick="generarCampos()" value="Campos">
         <!--Dos radio button, con 4 opciones a elegir-->
@@ -35,54 +35,53 @@
         <input type="button" id="btn_generarSelect" class="button button1" onclick="generarSelect()" value="Select">
         <!--Un text area-->
         <input type="button" id="btn_generarText" class="button button2" onclick="generarText()" value="Text area">
-    </div>
 
     <hr>
-
-    <div id="divUnico">
+        
+        <!--Campos de texto donde poner el DNI, el nombre y los apellidos, la dirección y el teléfono-->
+        <!--
         <table>
-            <!--Campos de texto donde poner el DNI, el nombre y los apellidos, la dirección y el teléfono-->
             <tr>
-                <td id="td1">DNI</td>
-                <td id="td2">
+                <td>DNI</td>
+                <td>
                     <input type="text" name="dni" id="dni" placeholder="DNI"/>
                 </td>
             </tr>
             <tr>
-                <td id="td3">Nombre</td>
-                <td id="td4">
+                <td>Nombre</td>
+                <td>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
                 </td>
             </tr>
             <tr>
-                <td id="td5">Apellidos</td>
-                <td id="td6">
+                <td>Apellidos</td>
+                <td>
                     <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"/>
                 </td>
             </tr>
             <tr>
-                <td id="td7">Direccion</td>
-                <td id="td8">
+                <td>Direccion</td>
+                <td>
                     <input type="text" name="direccion" id="direccion" placeholder="Direccion"/>
                 </td>
             </tr>
             <tr>
-                <td id="td9">Telefono</td>
-                <td id="td10">
+                <td>Telefono</td>
+                <td>
                     <input type="text" name="telefono" id="telefono" placeholder="Telefono"/>
                 </td>
             </tr>
 
-            <!--Dos radio button, con 4 opciones a elegir-->
+            //Dos radio button, con 4 opciones a elegir
             <tr>
                 <td>
                     <label for="estadoCivil">Estado civil: </label>
                 </td>
                 <td>
-                    <input type="radio" name="estadoCivil" value="S">Soltero: <br/>
-                    <input type="radio" name="estadoCivil" value="C">Casado: <br/>
-                    <input type="radio" name="estadoCivil" value="D">Divorciado: <br/>
-                    <input type="radio" name="estadoCivil" value="V">Viudo: <br/>
+                    <input type="radio" name="estadoCivil" value="S">Soltero<br/>
+                    <input type="radio" name="estadoCivil" value="C">Casado<br/>
+                    <input type="radio" name="estadoCivil" value="D">Divorciado<br/>
+                    <input type="radio" name="estadoCivil" value="V">Viudo<br/>
                 </td>
             </tr>
             <tr>
@@ -90,14 +89,14 @@
                     <label for="estadoCivil">Hijos: </label>
                 </td>
                 <td>
-                    <input type="radio" name="estadoCivil" value="S">Ninguno: <br/>
-                    <input type="radio" name="estadoCivil" value="C">Uno: <br/>
-                    <input type="radio" name="estadoCivil" value="D">Dos: <br/>
-                    <input type="radio" name="estadoCivil" value="V">Mas de dos: <br/>
+                    <input type="radio" name="estadoCivil" value="S">Ninguno<br/>
+                    <input type="radio" name="estadoCivil" value="C">Uno<br/>
+                    <input type="radio" name="estadoCivil" value="D">Dos<br/>
+                    <input type="radio" name="estadoCivil" value="V">Mas de dos<br/>
                 </td>
             </tr>
 
-            <!--Cinco checkbox diferentes-->
+            //Cinco checkbox diferentes
             <tr>
                 <td>
                     <label for="hobbies">Hobbies: </label>
@@ -111,7 +110,7 @@
                 </td>
             </tr>	
 
-            <!--2 imagenes-->
+            //2 imagenes
             <tr>
                 <td>
                     <img src="img/rectangular.png" alt="Forma rectangular" title="Forma rectangular">
@@ -124,9 +123,9 @@
             </tr>
             
 
-            <!--Un campo select-->
+            //Un campo select
             <tr>
-                <td id="td7">Ciudad</td>
+                <td id="td7">Ciudad: </td>
                 <td id="td8">
                     <select name="ciudad" id="ciudad">
                         <option>Madrid</option>
@@ -138,15 +137,15 @@
                 </td>
             </tr>
 
-            <!--Un text area-->
+            //Un text area
             <tr>
-                <td id="td9">Observaciones</td>
+                <td id="td9">Observaciones: </td>
                 <td id="td10">
                     <textarea name="observaciones" id="observaciones" placeholder="Escriba sus observaciones aqui."></textarea>
                 </td>
             </tr>
         </table>
+        -->
     </div>
-
 </body>
 </html>
