@@ -373,14 +373,135 @@ function generarCheckbox() {
 
 }
 
+function generarImagen() {
+
+    //Creamos el elemento tabla y configuramos atributos
+    let tabla4 = document.createElement("table")
+    tabla4.setAttribute("align", "center")
+
+    //Creamos los elementos tr
+    let tr9 = document.createElement("tr")
+    let tr10 = document.createElement("tr")
+
+    //Creamos los elementos td
+    let td17 = document.createElement("td")
+    let td18 = document.createElement("td")
+
+    //Creamos los elementos img
+    let img1 = document.createElement("img")
+    let img2 = document.createElement("img")
+
+    //Configuramos atributos de los elementos img
+    img1.setAttribute("src", "img/rectangular.png")
+    img1.setAttribute("alt", "Forma rectangular")
+    img1.setAttribute("title", "Forma rectangular")
+
+    img2.setAttribute("src", "img/hexagonal.jpg")
+    img2.setAttribute("alt", "Cristal hexagonal")
+    img2.setAttribute("title", "Cristal hexagonal")
+
+    //Creamos la estructura
+    td17.appendChild(img1)
+    tr9.appendChild(td17)
+
+    td18.appendChild(img2)
+    tr10.appendChild(td18)
+
+    tabla4.appendChild(tr9)
+    tabla4.appendChild(tr10)
+
+    divUnico.appendChild(tabla4)
+
+}
+
 function generarSelect() {
+
+    //Creamos el elemnto tabla y configuramos atributos
+    let tabla5 = document.createElement("table")
+    tabla5.setAttribute("align", "center")
+
+    //Creamos el elemento tr
+    let tr11 = document.createElement("tr")
+
+    //Creamos los elementos td
+    let td19 = document.createElement("td")
+    let td20 = document.createElement("td")
+
+    //Creamos el elemento texto
+    let txt22 = document.createTextNode("Ciudad: ")
+    let txt23 = document.createTextNode("Madrid")
+    let txt24 = document.createTextNode("Valencia")
+    let txt25 = document.createTextNode("Barcelona")
+    let txt26 = document.createTextNode("Salamanca")
+    let txt27 = document.createTextNode("Sevilla")
+
+    //Creamos el elemento select
+    let select1 = document.createElement("select")
+
+    //Creamos los elemntos option
+    let option1 = document.createElement("option")
+    let option2 = document.createElement("option")
+    let option3 = document.createElement("option")
+    let option4 = document.createElement("option")
+    let option5 = document.createElement("option")
+
+    //Creamos la estructura
+    td19.appendChild(txt22)
+
+    option1.appendChild(txt23)
+    option2.appendChild(txt24)
+    option3.appendChild(txt25)
+    option4.appendChild(txt26)
+    option5.appendChild(txt27)
+
+    select1.appendChild(option1)
+    select1.appendChild(option2)
+    select1.appendChild(option3)
+    select1.appendChild(option4)
+    select1.appendChild(option5)
+
+    td20.appendChild(select1)
+
+    tr11.appendChild(td19)
+    tr11.appendChild(td20)
+
+    tabla5.appendChild(tr11)
+
+    divUnico.appendChild(tabla5)
 
 }
 
 function generarText() {
 
-}
+    //Creamos el elemento table y configuramos sus atributos
+    let tabla6 = document.createElement("table")
+    tabla6.setAttribute("align", "center")
 
-function vaciarSelect() {
+    //Creamos el elemento tr
+    let tr12 = document.createElement("tr")
+
+    //Creamos los elemntos td
+    let td21 = document.createElement("td")
+    let td22 = document.createElement("td")
+
+    //Creamos el elemento text
+    let txt28 = document.createTextNode("Observaciones: ")
+
+    //Creamos el elemnto textarea y configuramos sus atributos
+    let textarea1 = document.createElement("textarea")
+    textarea1.setAttribute("name", "observaciones")
+    textarea1.setAttribute("id", "observaciones")
+    textarea1.setAttribute("placeholder", "Escriba sus observaciones aqui.")
+
+    //Creamos la estructura
+    td21.appendChild(txt28)
+    td22.appendChild(textarea1)
+
+    tr12.appendChild(td21)
+    tr12.appendChild(td22)
+
+    tabla6.appendChild(tr12)
+
+    divUnico.appendChild(tabla6)
 
 }
