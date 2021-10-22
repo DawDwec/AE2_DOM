@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</head>
+
+<body>
+    <div align="center">
+        <!--Campos de texto donde poner el DNI, el nombre y los apellidos, la dirección y el teléfono.-->
+        <input type="button" id="btn_generarCampos" class="button button1" onclick="generarCampos()" value="Campos">
+        <!--Dos radio button, con 4 opciones a elegir-->
+        <input type="button" id="btn_generarRadio" class="button button2" onclick="generarRadio()" value="Radio button">
+        <!--Cinco checkbox diferentes-->
+        <input type="button" id="btn_generarCheckbox" class="button button1" onclick="generarCheckbox()" value="Checkbox">
+        <!--2 imágenes-->
+        <input type="button" id="btn_generarImagen" class="button button2" onclick="generarImagen()" value="Imagen">
+        <!--Un campo select-->
+        <input type="button" id="btn_generarSelect" class="button button1" onclick="generarSelect()" value="Select">
+        <!--Un text area-->
+        <input type="button" id="btn_generarText" class="button button2" onclick="generarText()" value="Text area">
+    </div>
+
+    <hr>
+
+    <div id="divUnico">
+        <table>
+            <!--Campos de texto donde poner el DNI, el nombre y los apellidos, la dirección y el teléfono-->
+            <tr>
+                <td id="td1">DNI</td>
+                <td id="td2">
+                    <input type="text" name="dni" id="dni" placeholder="DNI"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="td3">Nombre</td>
+                <td id="td4">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="td5">Apellidos</td>
+                <td id="td6">
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="td7">Direccion</td>
+                <td id="td8">
+                    <input type="text" name="direccion" id="direccion" placeholder="Direccion"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="td9">Telefono</td>
+                <td id="td10">
+                    <input type="text" name="telefono" id="telefono" placeholder="Telefono"/>
+                </td>
+            </tr>
+
+            <!--Dos radio button, con 4 opciones a elegir-->
+            <tr>
+                <td>
+                    <label for="estadoCivil">Estado civil: </label>
+                </td>
+                <td>
+                    <input type="radio" name="estadoCivil" value="S">Soltero: <br/>
+                    <input type="radio" name="estadoCivil" value="C">Casado: <br/>
+                    <input type="radio" name="estadoCivil" value="D">Divorciado: <br/>
+                    <input type="radio" name="estadoCivil" value="V">Viudo: <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estadoCivil">Hijos: </label>
+                </td>
+                <td>
+                    <input type="radio" name="estadoCivil" value="S">Ninguno: <br/>
+                    <input type="radio" name="estadoCivil" value="C">Uno: <br/>
+                    <input type="radio" name="estadoCivil" value="D">Dos: <br/>
+                    <input type="radio" name="estadoCivil" value="V">Mas de dos: <br/>
+                </td>
+            </tr>
+
+            <!--Cinco checkbox diferentes-->
+            <tr>
+                <td>
+                    <label for="hobbies">Hobbies: </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="M" />Música<br/>	
+                    <input type="checkbox" name="hobbies" value="L" />Lectura<br/>	
+                    <input type="checkbox" name="hobbies" value="D" />Deportes<br/>	
+                    <input type="checkbox" name="hobbies" value="V" />Videojuegos<br/>
+                    <input type="checkbox" name="hobbies" value="C" />Cocina<br/>
+                </td>
+            </tr>	
+
+            <!--2 imagenes-->
+            <tr>
+                <td>
+                    <img src="img/rectangular.png" alt="Forma rectangular" title="Forma rectangular">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/hexagonal.jpg" alt="Cristal hexagonal" title="Cristal hexagonal">
+                </td>
+            </tr>
+            
+
+            <!--Un campo select-->
+            <tr>
+                <td id="td7">Ciudad</td>
+                <td id="td8">
+                    <select name="ciudad" id="ciudad">
+                        <option>Madrid</option>
+                        <option>Valencia</option>
+                        <option>Barcelona</option>
+                        <option>Salamanca</option>
+                        <option>Sevilla</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!--Un text area-->
+            <tr>
+                <td id="td9">Observaciones</td>
+                <td id="td10">
+                    <textarea name="observaciones" id="observaciones" placeholder="Escriba sus observaciones aqui."></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
