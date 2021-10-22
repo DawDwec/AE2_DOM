@@ -270,6 +270,8 @@ function generarRadio() {
     tr7.appendChild(td13)
     tr7.appendChild(td14)
 
+    /**------------------------------------------------------ */
+
     //Añadimos los 2 tr a la tabla
     tabla2.appendChild(tr6)
     tabla2.appendChild(tr7)
@@ -280,6 +282,94 @@ function generarRadio() {
 }
 
 function generarCheckbox() {
+
+    //Creamos el elemntos tabla
+    let tabla3 = document.createElement("table")
+
+    //Configuramos los parametros del elemento tabla
+    tabla3.setAttribute("align", "center")
+
+    //Creamos el elemento tr
+    let tr8 = document.createElement("tr")
+
+    //Creamos el elemento td
+    let td15 = document.createElement("td")
+    let td16 = document.createElement("td")
+
+    //Creamos el elemento label
+    let label13 = document.createElement("label")
+    label13.setAttribute("for", "hobbies")
+    let txt16 = document.createTextNode("Hobbies: ")
+
+    //Creamos los elementos br
+    let br9 = document.createElement("br")
+    let br10 = document.createElement("br")
+    let br11 = document.createElement("br")
+    let br12 = document.createElement("br")
+    let br13 = document.createElement("br")
+
+    //Creamos los elementos input
+    let input14 = document.createElement("input")
+    let input15 = document.createElement("input")
+    let input16 = document.createElement("input")
+    let input17 = document.createElement("input")
+    let input18 = document.createElement("input")
+
+    //Configuramos los atributos de los elementos input
+    input14.setAttribute("type", "checkbox")
+    input14.setAttribute("name", "hobbies")
+    input14.setAttribute("value", "M")
+    input15.setAttribute("type", "checkbox")
+    input15.setAttribute("name", "hobbies")
+    input15.setAttribute("value", "L")
+    input16.setAttribute("type", "checkbox")
+    input16.setAttribute("name", "hobbies")
+    input16.setAttribute("value", "D")
+    input17.setAttribute("type", "checkbox")
+    input17.setAttribute("name", "hobbies")
+    input17.setAttribute("value", "V")
+    input18.setAttribute("type", "checkbox")
+    input18.setAttribute("name", "hobbies")
+    input18.setAttribute("value", "C")
+
+    //Creamos los textos para los elementos input
+    let txt17 = document.createTextNode("Musica")
+    let txt18 = document.createTextNode("Lectura")
+    let txt19 = document.createTextNode("Deportes")
+    let txt20 = document.createTextNode("Videojuegos")
+    let txt21 = document.createTextNode("Cocina")
+
+    //Creamos la estructura
+
+    label13.appendChild(txt16)
+    td15.appendChild(label13)
+
+    td16.appendChild(br9)
+    td16.appendChild(input14)
+    td16.appendChild(txt17)
+
+    td16.appendChild(br10)
+    td16.appendChild(input15)
+    td16.appendChild(txt18)
+
+    td16.appendChild(br11)
+    td16.appendChild(input16)
+    td16.appendChild(txt19)
+
+    td16.appendChild(br12)
+    td16.appendChild(input17)
+    td16.appendChild(txt20)
+
+    td16.appendChild(br13)
+    td16.appendChild(input18)
+    td16.appendChild(txt21)
+
+    tr8.appendChild(td15)
+    tr8.appendChild(td16)
+
+    tabla3.appendChild(tr8)
+
+    divUnico.appendChild(tabla3)
 
 }
 
